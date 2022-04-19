@@ -1,56 +1,112 @@
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+:root {
+  --color-second: gray;
 }
-body{
-    display: flex;
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.todo{
-    margin: 50px auto;
-    background-color: #052555;
-    border-radius: 20px;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 350px;
-    height: fit-content;
+
+body {
+  margin: 0;
+  padding: 0;
 }
-.todo-view{
-    background-color: #5199FF;
-    color: #fff;
-    font-size: 24px;
-    font-weight: normal;
-    padding: 30px 20px;
-    border-radius: 20px;
-    letter-spacing: 2px;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /*margin: 0 auto;
+  width: 85%;*/
 }
-.todo-item{
-    margin-top: 20px;
-    background-color:#5199FF;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
+
+main .container {
 }
-.todo-item span:nth-child(1){
-    color: inherit;
-    font-weight: bold;
-    font-size: 24px;
+
+header {
+  background-color: var(--color-second);
 }
-.todo-item span:nth-child(2){
-    color: inherit;
-    font-weight: normal;
-    font-size: 18px;
-    padding: 10px 0;
+
+footer {
+  background-color: var(--color-second);
 }
-.todo-item button{
-    background-color: transparent;
-    border: 2px solid #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    width: 80%;
-    margin-top: 20px;
-    color: inherit;
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  width: 80%;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  width: 80%;
+}
+
+.navigation {
+  margin: 0 auto 0 0;
+}
+
+.navigation-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  padding: 0 5px;
+}
+
+.todo {
+  margin: 10px 10px;
+  background-color: #052555;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 350px;
+  width: 350px;
+  height: fit-content;
+}
+
+.todo-view {
+  background-color: #5199ff;
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 30px 20px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+}
+.todo-item {
+  margin-top: 10px;
+  background-color: #5199ff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.todo-item span:nth-child(1) {
+  color: inherit;
+  font-weight: bold;
+  font-size: 24px;
+}
+.todo-item span:nth-child(2) {
+  color: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.todo-item button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 80%;
+  margin: 10px auto 0 auto;
+  color: inherit;
 }
