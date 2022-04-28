@@ -1,24 +1,35 @@
 :root {
-  --color-second: gray;
+  --color-second: pink;
 }
 
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  /*height: 100%;*/
+  /*width: 90%;*/
   /*margin: 0 auto;
   width: 85%;*/
-}
-
-main .container {
 }
 
 header {
@@ -32,15 +43,16 @@ footer {
 header .container {
   display: flex;
   align-items: center;
-  height: 7vh;
-  width: 80%;
+  height: 10vh;
+  width: 96%;
 }
 
 footer .container {
   display: flex;
   align-items: center;
-  height: 8vh;
-  width: 80%;
+  height: 10vh;
+  width: 96%;
+  flex: 0 0 auto;
 }
 
 .navigation {
@@ -49,9 +61,10 @@ footer .container {
 
 .navigation-list {
   display: flex;
+  align-items: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  /*margin: 0;*/
+  /*padding: 0;*/
 }
 
 .navigation-item {
@@ -59,15 +72,14 @@ footer .container {
 }
 
 .todo {
-  margin: 10px 10px;
+  margin: 20px 20px;
   background-color: #052555;
   border-radius: 20px;
   border: none;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  max-width: 350px;
-  width: 350px;
+  padding: 10px;
+  width: 25%;
   height: fit-content;
 }
 

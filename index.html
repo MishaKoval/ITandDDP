@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- onload="getTodo() -->
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li
+                class="navigation-item"
+                id="nowDate"
+                style="position: relative; left: 100%"
+              >
+                Date
+              </li>
+
+              <li class="navigation-item" id="nowTime">Time</li>
+              <li class="navigation-item">
+                <a href="index.html" style="position: relative; left: 700%"
+                  >My Todo List</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <a class="navigation-item" href="" class="button">Log in</a>
+        </div>
+      </header>
+      <main>
+        <div class="container" id="maincontainer">
+          <div class="todo" id="todoitem">
+            <span class="todo-view" style="text-align: center">TO DO</span>
+            <div class="todo-item">
+              <span>Title<br /></span>
+              <span>Some text<br /> </span>
+              <button>Note interface</button>
+              <button onclick="deleteTodoItem()">Delete</button>
+            </div>
+            <div class="todo-item">
+              <span>Title<br /></span>
+              <span>Some text<br /> </span>
+              <button>Note interface</button>
+              <button onclick="deleteTodoItem()">Delete</button>
+            </div>
+            <div class="todo-item">
+              <span>Title<br /></span>
+              <span>Some text<br /> </span>
+              <button>Note interface</button>
+              <button onclick="deleteTodoItem()">Delete</button>
+            </div>
+            <!-- <input
+              value="Delete TODO"
+              type="button"
+              onclick="deleteButtonClick()"
+            /> -->
+            <button onclick="deleteButtonClick()">Delete TODO</button>
+            <!-- <button onclick="changeColor()">ChangeColor</button> -->
+            <label style="color: red" for="changeColor">Change Color</label>
+            <input type="color" value="#ff0000" id="changeColor" />
+          </div>
+          <input
+            value="NEW TODO"
+            type="button"
+            onclick="addButtonClick()"
+            id="newtodoitem"
+          />
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li
+                class="navigation-item"
+                style="position: relative; left: 600%"
+              >
+                Todo List By MiKo
+              </li>
+              <!-- <img src="644913567.jpeg" alt="" /> -->
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script>
+    timeRefresh();
+    dateRefresh();
+  </script>
+</html>
