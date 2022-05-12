@@ -26,6 +26,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   /*height: 100%;*/
   /*width: 90%;*/
   /*margin: 0 auto;
@@ -69,6 +70,9 @@ footer .container {
 
 .navigation-item {
   padding: 0 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: #ff0000;
 }
 
 .todo {
