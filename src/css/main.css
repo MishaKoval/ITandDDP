@@ -1,0 +1,360 @@
+:root {
+    --color-second: rgba(22, 218, 84, 0.462);
+    --color-second-dark: rgba(16, 39, 151, 0.859);
+    --color-second-second: rgba(16, 111, 243, 0.762);
+    --color-buttons:rgba(64, 14, 227, 0.758);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',Helvetica,sans-serif;
+    opacity: 1.0;
+    /* overflow: auto; */
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+    color: var(--color-second);
+    /* margin-left: 2%; */
+    /* margin-left: 2%; */
+    /* text-shadow: 2px 2px 2px var(--color-second); */
+}
+
+footer h1{
+    /* position:absolute;
+    C */
+    font-size: 20px;
+    /* font-weight: bolder; */
+    font-style: oblique;
+    color: rgba(37, 228, 20, 0.833);
+}
+header h1{
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+header {
+    background-color: var(--color-second);
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+  
+footer {
+    background-color: var(--color-second);
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    height: 1vh;
+    width: 96%;
+    flex: 0 0 auto;
+}
+  
+footer .container {
+    display: flex;
+    align-items: center;
+    height: 1vh;
+    width: 96%;
+    flex: 0 0 auto;
+}
+
+main {
+    height: 90%;
+}
+
+
+.textarea {
+    min-height: 30px;
+    max-height: 100px;
+    height: 30px;
+    resize: none;
+    overflow: hidden;
+    background-color: var(--color-second-second);
+    outline:none;
+    width: 100%;
+    text-align: center;
+    color:  white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    /*height: 100%;*/
+    /*width: 90%;*/
+    /*margin: 0 auto;
+    width: 85%;*/
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 50px 10px;
+    background: url('../img/back1.jpg') center; 
+    background-size: 100% auto;
+    overflow: auto;
+}
+
+.app .boards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.app .button {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-buttons);    
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: cell;
+    user-select: none;
+}
+
+/* .app .delete_board{
+
+    position:absolute;
+    right: 50px;
+    top: 50px;
+    color: brown;
+    background-color: wheat;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 9px;
+} */
+
+.login {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--color-buttons) ;
+    cursor: pointer;
+    /* position:absolute; */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* margin-left: 2%; */
+    /* margin-right: auto; */
+    /* right: 0%;
+    left: 47%; */
+    /* transform: translate(-50%); */
+    width: 70px;
+    
+}
+.settings {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.settings img {
+    background: var(--color-second);
+    background-color: var(--color-second);
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+   /* background-color: var(--color-second); */
+}
+
+
+
+.boards .boards_item {
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    max-width: 250px;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--color-second);
+    margin: 15px 25px;
+    transition: .3s all ease;
+    border-radius: 10px;
+}
+
+.boards_item .title {
+    /* outline: 2px solid var(--color-second-second); */
+    margin: 5px;
+    color: white;
+}
+
+.boards_item .list_item{
+    padding: 2px 2px 2px 2px;
+}
+
+.boards_item .list {
+    min-height: 50px;
+    font-size: 16px;
+    height: 50%;
+    padding: 3px 5px;
+    /* overflow-y: scroll; */
+
+    /* height: fit-content; */
+    
+}
+
+
+.boards_item .form {
+    border-radius: 3px;
+    display: none;
+    overflow: none;
+    /* overflow-y: scroll; */
+}
+
+.boards_item .add_btn{
+    height: 40px;
+    width: 98%;
+    background: var(--color-second-second);
+    border-radius: 10px;
+    /* margin-top: 5px; */
+    margin: 2px;
+    display: flex;
+    font-size: 14px;
+    padding-left: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.add_btn span {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.form .textarea {
+    resize: none;
+    height: 60%;
+    border-radius: 10px;
+    /* background: var(--color-second); */
+    color: white;
+    padding:  10px;
+    width: 100%;
+}
+
+.form .textarea:focus {
+    outline: none;
+}
+
+.form .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttons *{
+    border: none;
+    height: 30%;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .button_add_item {
+    background: greenyellow;
+    width: 68%;
+    height: 30px;
+    margin-right: 6px;
+    cursor: cell;
+}
+
+.buttons .button_cancel_item {
+    background: rgb(255, 245, 47);
+    padding: 0 10px;
+    /* position: relative;
+    right: 2px; */
+    width: fit-content;
+    height: 30px;
+    margin-left: 1px;
+    flex-shrink: 0;
+}
+
+.list .list_item{
+    position: relative;
+    background-color: var(--color-second-second);
+    border-radius: 3px;
+    padding: 7px;
+    text-align: center;
+    margin: 3px 3px;
+    cursor: pointer;
+    /* font-size: 40px; */
+    outline: none;
+    border: none;
+    color: white;
+    overflow-wrap:break-word;
+}
+
+.list_item .delete_item{
+    border-radius: 5px;
+    height: 18px;
+    border: none;
+    width: 18px;
+    position:absolute;
+    right: 1px;
+    bottom: 1px;
+    cursor:not-allowed;
+    background-color: blueviolet;
+}
+
+.delete_item img {
+    /* border-radius: 1px; */
+    color: white;
+    /* background-color: rgba(255, 0, 0, 0.432); */
+    height: 100%;
+    width: 100%;
+}
