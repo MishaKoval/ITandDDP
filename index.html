@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin ="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body> 
+    <div class="wrapper">
+        <header>
+            <button class="login">LOG IN</button>
+            <h1>Trello</h1>
+            <button class="settings">
+                <img src="./img/sett.png">
+            </button>
+            
+        </header>
+        <main>
+            <div class="app">
+                <!-- <button class="delete_board" draggable="true">DELETE</button> -->
+                <div class="boards" id ="boardmain">
+                    <div class="boards_item">
+                        <span contenteditable="true" class="title">Введите название доски
+                            <!-- <button class="delete_bord_item">
+                                <img src="./img/trash.png">
+                            </button> -->
+                        </span>
+                        
+                        <section class="list">
+                            <div class="list_item" draggable="true">
+                                Стартовая карточка
+                                <button class="delete_item">
+                                    <img src="./img/trash.png">
+                                </button>
+                            </div>  
+                        </section>
+                        <form class="form">
+                            <!-- oninput="auto_grow(this)" -->
+                            <textarea class="textarea"  wrap="soft" placeholder="Введите текст для новой карточки"></textarea>
+                            <div class="buttons">
+                                <div class="button_add_item">Добавить карточку</div>
+                                <div class="button_cancel_item">Отмена</div> 
+                            </div>
+                        </form>
+                        <div class="add_btn">
+                            <span>+</span>
+                            Добавить карточку
+                        </div>
+                    </div>
+                </div>
+                <button class="button">Добавить доску</button>
+            </div>
+        </main>
+        <footer>
+                <h1>By MiKo 2022</h1>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="//cdn.muicss.com/mui-0.10.3/extra/mui-combined.js"></script>
+    <!-- <script type = "module" src="./js/ques.js"></script> -->
+</body>
+</html>
