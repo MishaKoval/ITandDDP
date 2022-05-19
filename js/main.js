@@ -66,6 +66,10 @@ class Connection
             // const daskAddBtn = document.querySelector('.button')
             // daskAddBtn.addEventListener('click',addDask)    
         }
+        else 
+        {
+            openModal()
+        }
         
         // console.log('ready')
         // const html = question.length
