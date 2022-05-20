@@ -66,6 +66,10 @@ class Connection
             // const daskAddBtn = document.querySelector('.button')
             // daskAddBtn.addEventListener('click',addDask)    
         }
+        else 
+        {
+            openModal()
+        }
         
         // console.log('ready')
         // const html = question.length
@@ -89,6 +93,7 @@ function saveData()
         // console.log(html)
         addToLocalStorage(html)
         // Connection.delete()
+        submit()
         // .then(submit())
 }
 
@@ -104,23 +109,23 @@ let counts = {
 }
 
 
-// function submit()
-// {
+function submit()
+{
     
-//     const question = {
-//         text: getDataFromLocalStorage(),
-//         // date: new Date().toJSON()
-//     }
-//     Connection.create(question).then(()=>
-//     {
+    const question = {
+        text: getDataFromLocalStorage(),
+        // date: new Date().toJSON()
+    }
+    Connection.create(question).then(()=>
+    {
 
-//     })
-// }
+    })
+}
 
 const loginBtn = document.querySelector('.login')
 loginBtn.addEventListener('click',()=>
 {
-    // openModal()
+    openModal()
     // submit();
     // auth('ksasha754@gmail.com','1304Miko');
     // console.log('loginned')
